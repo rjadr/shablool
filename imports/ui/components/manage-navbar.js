@@ -14,19 +14,19 @@ export default () => {
     const hour = now.getHours();
     switch (true) {
       case hour >= 22:
-        return 'לילה טוב';
+        return 'Good night';
       case hour >= 0 && hour < 6:
-        return 'לילה טוב';
+        return 'Good morning';
       case hour >= 6 && hour < 12:
-        return 'בוקר טוב';
+        return 'Good morning';
       case hour >= 12 && hour < 15:
-        return 'צהריים טובים';
+        return 'Good afternoon';
       case hour >= 15 && hour < 18:
-        return 'אחר הצהריים טובים';
+        return 'Good afternoon';
       case hour >= 18 && hour < 22:
-        return 'ערב טוב';
+        return 'Good evening';
       default:
-        return 'שלום';
+        return 'Hello';
     }
   };
   return (
