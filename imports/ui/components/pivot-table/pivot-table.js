@@ -14,10 +14,10 @@ export default class PivotTable extends React.Component {
 
     $('#output').pivotUI(mps, {
       renderers: $.extend($.pivotUtilities.locales.he.renderers, $.pivotUtilities.c3_renderers),
-      cols: ['מספר השאלה'],
-      rows: ['משתמש'],
-      rendererName: 'גרף עמודות',
-      aggregatorName: 'סכום',
+      cols: ['Question #'],
+      rows: ['User'],
+      rendererName: 'Bar graph',
+      aggregatorName: 'Amount',
       rowOrder: 'key_a_to_z',
       colOrder: 'key_a_to_z',
       rendererOptions: {
