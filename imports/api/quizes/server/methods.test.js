@@ -171,7 +171,7 @@ describe('quizes methods', function() {
         owner: 'Me',
       });
       const create = () => newQuiz.create();
-      assert.throws(create, Error, 'אתה לא יכול ליצור שאלון בלי שאלות [validation-error]');
+      assert.throws(create, Error, 'You cannot create a quiz without questions lol [validation-error]');
     });
   });
 });
