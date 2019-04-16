@@ -23,17 +23,17 @@ export const Answer = Class.create({
         {
           type: 'minLength',
           param: 1,
-          message: 'חובה למלא תשובה',
+          message: 'Answer must be filled in',
         },
         {
           type: 'maxLength',
           param: 61,
-          message: 'תשובה ארוכה מדי',
+          message: 'Answer is too long',
         },
         {
           type: 'regexp',
           param: /^.*\S.*$/,
-          message: 'תכניס תשובה נורמלית!',
+          message: 'Get a normal answer!',
         },
       ],
     },
