@@ -49,24 +49,24 @@ class Register extends React.Component {
         <div id="login">
             <div className="login-background" />
             <form onSubmit={register}>
-                <h1>הצטרף לשבלול</h1>
+                <h1>Join</h1>
                 <div className={`form-group ${ this.state.userNameUniqueError ? 'has-error' : '' }`}>
-                    <label htmlFor="username" className="sr-only">שם משתמש</label>
-                    <input type="text" name="username" id="username" className="form-control" placeholder="שם משתמש" required />
-                    { this.state.userNameUniqueError ? <span className="help-block">שם המשתמש כבר קיים במערכת</span> : '' }
+                    <label htmlFor="username" className="sr-only">Username</label>
+                    <input type="text" name="username" id="username" className="form-control" placeholder="username" required />
+                    { this.state.userNameUniqueError ? <span className="help-block">The username already exists in the system</span> : '' }
                 </div>
                 <div className='form-group'>
-                    <label htmlFor="password" className="sr-only">סיסמה</label>
-                    <input type="password" name="password" id="password" className="form-control" placeholder="סיסמה" required />
+                    <label htmlFor="password" className="sr-only">Password</label>
+                    <input type="password" name="password" id="password" className="form-control" placeholder="password" required />
                 </div>
                 <div className={`form-group ${ this.state.passwordConfirmError ? 'has-error' : '' }`}>
-                    <label htmlFor="password" className="sr-only">אישור סיסמה</label>
-                    <input type="password" name="confirmPassword" id="confirmPassword" className="form-control" placeholder="אישור סיסמה" required />
-                    { this.state.passwordConfirmError ? <span className="help-block">הסיסמאות אינן שוות</span> : '' }
+                    <label htmlFor="password" className="sr-only">Password verification</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" className="form-control" placeholder="password confirmation" required />
+                    { this.state.passwordConfirmError ? <span className="help-block">The passwords are not the same</span> : '' }
                 </div>
                 <input type="submit" id="btn-login" className="btn btn-custom btn-lg btn-block" value="הירשם!" />
             </form>
-            <div className="link-message">כבר יש לך משתמש בשבלול? <a href="/Login">התחבר!</a></div>
+            <div className="link-message">Already have an account? <a href="/Login">Log in!</a></div>
         </div>
         );
     }
