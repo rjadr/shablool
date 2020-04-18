@@ -48,7 +48,7 @@ class Login extends React.Component {
             <div id="login">
                 <div className="login-background" />
                 <form onSubmit={login}>
-                    <h1>התחבר לשבלול</h1>
+                    <h1>Connect</h1>
                     <div className={`form-group ${ this.state.usernameError ? 'has-error' : '' }`}>
                         <label htmlFor="username" className="sr-only">Username</label>
                         <input type="text" name="username" id="username" className="form-control" placeholder="username" required />
