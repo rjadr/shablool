@@ -50,18 +50,18 @@ class Login extends React.Component {
                 <form onSubmit={login}>
                     <h1>התחבר לשבלול</h1>
                     <div className={`form-group ${ this.state.usernameError ? 'has-error' : '' }`}>
-                        <label htmlFor="username" className="sr-only">שם משתמש</label>
-                        <input type="text" name="username" id="username" className="form-control" placeholder="שם משתמש" required />
-                        { this.state.usernameError ? <span className="help-block">שם זה אינו קיים במערכת</span> : '' }
+                        <label htmlFor="username" className="sr-only">Username</label>
+                        <input type="text" name="username" id="username" className="form-control" placeholder="username" required />
+                        { this.state.usernameError ? <span className="help-block">This name does not exist in the system</span> : '' }
                     </div>
                     <div className={`form-group ${ this.state.passwordError ? 'has-error' : '' }`}>
-                        <label htmlFor="password" className="sr-only">סיסמה</label>
-                        <input type="password" name="password" id="password" className="form-control" placeholder="סיסמה" required />
-                        { this.state.passwordError ? <span className="help-block">סיסמה שגויה</span> : '' }
+                        <label htmlFor="password" className="sr-only">Password</label>
+                        <input type="password" name="password" id="password" className="form-control" placeholder="password" required />
+                        { this.state.passwordError ? <span className="help-block">Incorrect password</span> : '' }
                     </div>
-                    <input type="submit" id="btn-login" className="btn btn-custom btn-lg btn-block" value="התחבר!" />
+                    <input type="submit" id="btn-login" className="btn btn-custom btn-lg btn-block" value="Connect!" />
                 </form>
-                <div className="link-message">עדיין אין לך משתמש בשבלול? <a href="/Register">הצטרף!</a></div>
+                <div className="link-message">Don't have an account yet? <a href="/Register">Register!</a></div>
             </div>
         );
     }
