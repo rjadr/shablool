@@ -38,7 +38,7 @@ class Manage extends React.Component {
       quizToDelete.applyMethod('delete', []);
 
       const notifyUser = () => {
-        this.setState({ snackbarNotification: 'השאלון נמחק בהצלחה' });
+        this.setState({ snackbarNotification: 'Quiz successfully deleted' });
         setTimeout(() => this.setState({ snackbarNotification: false }), 3000);
       };
       notifyUser();
@@ -54,7 +54,7 @@ class Manage extends React.Component {
       newQuiz.applyMethod('create', []);
 
       const notifyUser = () => {
-        this.setState({ snackbarNotification: 'השאלון הועתק בהצלחה' });
+        this.setState({ snackbarNotification: 'Quiz successfully copied' });
         setTimeout(() => this.setState({ snackbarNotification: false }), 3000);
       };
       notifyUser();
@@ -76,16 +76,16 @@ class Manage extends React.Component {
         {snackbarNotification ? <Snackbar message={snackbarNotification} /> : ''}
         <SweetAlert
           show={showDeleteQuizAlert}
-          title="מחיקת שאלון"
+          title="Deleting a quiz"
           type="warning"
           text={
             showDeleteQuizAlert
-              ? `האם אתה בטוח שברצונך למחוק את השאלון: ${quizToDelete.title}?`
+              ? `Are you sure you want to delete the quiz: ${quizToDelete.title}?`
               : ''
           }
           showCancelButton
-          confirmButtonText="מחק!"
-          cancelButtonText="בטל"
+          confirmButtonText="delete!"
+          cancelButtonText="keep"
           onConfirm={() => {
             deleteQuiz();
             this.setState({ quizToDelete: null, showDeleteQuizAlert: false });
@@ -152,7 +152,7 @@ const ManageTabs = ({ activeTab, changeTab }) => (
         onClick={changeTab(managementTabs.myQuizes)}
       >
         <span className="glyphicon glyphicon-list-alt" aria-hidden="true" />
-        <div className="hidden-xs">השאלונים שלי</div>
+        <div className="hidden-xs">My quizzes</div>
       </button>
     </div>
     <div className="btn-group" role="group">
@@ -163,7 +163,7 @@ const ManageTabs = ({ activeTab, changeTab }) => (
         onClick={changeTab(managementTabs.gamesManaged)}
       >
         <span className="glyphicon glyphicon-briefcase" aria-hidden="true" />
-        <div className="hidden-xs">משחקים שניהלתי</div>
+        <div className="hidden-xs">Quizzes I've run</div>
       </button>
     </div>
     <div className="btn-group" role="group">
@@ -174,7 +174,7 @@ const ManageTabs = ({ activeTab, changeTab }) => (
         onClick={changeTab(managementTabs.gamesPlayed)}
       >
         <span className="glyphicon glyphicon-stats" aria-hidden="true" />
-        <div className="hidden-xs">משחקים ששיחקתי</div>
+        <div className="hidden-xs">Quizzes I've played</div>
       </button>
     </div>
   </div>
