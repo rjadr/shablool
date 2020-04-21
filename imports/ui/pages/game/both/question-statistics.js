@@ -22,7 +22,7 @@ const QuestionStatistics = ({ game }) => {
           className="btn btn-primary show-leaders-btn"
           onClick={showLeaders}
         >
-            לטבלת המובילים
+            To the leaderboard
           </a>
         : ''}
       <div className="row">
@@ -38,7 +38,7 @@ const QuestionStatistics = ({ game }) => {
           <p className="answer-count" id="answer-count-number">
             {game.getLastQuestionAnswerCount()}
           </p>
-          <p className="answer-count">תשובות</p>
+          <p className="answer-count">Answers</p>
         </div>
       </div>
       <Answers answers={question.answers} game={game} />
