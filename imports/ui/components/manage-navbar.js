@@ -52,7 +52,7 @@ export default () => {
         <div className="collapse navbar-collapse" id="manage-nav">
           <form className="js-search navbar-form navbar-right" role="search" onSubmit={search}>
             <div className="form-group">
-              <input className="form-control" placeholder="חפש שאלון" name="query" type="text" />
+              <input className="form-control" placeholder="Look for a quiz" name="query" type="text" />
             </div>
             <button type="submit" className="btn btn-default">
               <span className="glyphicon glyphicon-search" />
