@@ -71,7 +71,7 @@ class QuestionForm extends React.Component {
                       name="text"
                       value={question.text}
                       className="form-control input-lg"
-                      placeholder="שאל/י שאלה"
+                      placeholder="Ask a question"
                       onChange={actions.changeQuestionText(question._id)}
                     />
                     {textValidation
@@ -84,7 +84,7 @@ class QuestionForm extends React.Component {
                 <div className="col-lg-3">
                   <div className={`form-group ${timeValidation ? 'has-error' : ''}`}>
                     <label htmlFor="time" className="control-label col-lg-6">
-                      זמן לשאלה:
+                      Question time:
                     </label>
                     <input
                       className="form-control input-lg col-lg-6"
@@ -148,7 +148,7 @@ class QuestionForm extends React.Component {
                             />
                           </div>
                           : <p className="upload-text">
-                              גרור תמונה או תלחץ על מנת לבחור אחת{' '}
+                              Drag an image or click to select one{' '}
                             <i className="fa fa-upload" aria-hidden="true" />
                           </p>}
                       </Dropzone>
