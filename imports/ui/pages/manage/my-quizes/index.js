@@ -20,7 +20,7 @@ const MyQuizes = ({ activeTab, myQuizes, actions }) =>
           <QuizCard quiz={quiz} actions={actions} />
         </div>,
         )
-      : <h3>לא יצרת אפילו שאלון אחד, למה אתה מחכה?</h3>}
+      : <h3>You haven't even created a single quiz, what are you waiting for?</h3>}
   </div>;
 
 MyQuizes.propTypes = {
