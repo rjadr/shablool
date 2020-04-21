@@ -46,7 +46,7 @@ const Question = ({ game }) => {
           <p className="answer-count" id="answer-count-number">
             {game.getLastQuestionAnswerCount()}
           </p>
-          <p className="answer-count">תשובות</p>
+          <p className="answer-count">Answers</p>
         </div>
       </div>
       <Answers answers={question.answers} game={game} />
