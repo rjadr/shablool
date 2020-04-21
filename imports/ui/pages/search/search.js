@@ -63,7 +63,7 @@ class Search extends React.Component {
         />
       </div>
       : <div id="search">
-        <h1>תוצאות חיפוש עבור <strong>{query}</strong></h1>
+        <h1>Search results for <strong>{query}</strong></h1>
         {results.map(quiz => (
           <div key={quiz._id}>
             <div className="row">
@@ -78,16 +78,16 @@ class Search extends React.Component {
             }
         >
           {this.state.quizDeleted
-              ? 'השאלון נמחק בהצלחה'
-              : 'השאלון הועתק בהצלחה'}
+              ? 'Quiz succesfully deleted'
+              : 'Quiz succesfully copied'}
         </div>
         <SweetAlert
           show={this.state.showDeleteQuizAlert}
-          title="מחיקת שאלון"
+          title="Deleting a quiz"
           type="warning"
           text={
               this.state.showDeleteQuizAlert
-                ? `האם אתה בטוח שברצונך למחוק את השאלון: ${this.state.quizToDelete.title}?`
+                ? `Are you sure you want to delete the quiz: ${this.state.quizToDelete.title}?`
                 : ''
             }
           showCancelButton
