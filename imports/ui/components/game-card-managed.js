@@ -41,7 +41,7 @@ const GameCardManaged = ({ game }) => {
                 <div className="star game-card-link">
                   <span className="fa fa-users game-card-info-text-icon" />
                   <span className="game-card-link-text game-card-info-text">
-                    <strong>{game.getPlayersCount()}</strong> שחקנים
+                    <strong>{game.getPlayersCount()}</strong> Players
                   </span>
                 </div>
               </div>
@@ -49,7 +49,7 @@ const GameCardManaged = ({ game }) => {
                 <div className="star game-card-link">
                   <span className="fa fa-question game-card-info-text-icon" />
                   <span className="game-card-link-text game-card-info-text">
-                    <strong>{game.quiz.questions.length}</strong> שאלות
+                    <strong>{game.quiz.questions.length}</strong> Questions
                   </span>
                 </div>
               </div>
@@ -60,7 +60,7 @@ const GameCardManaged = ({ game }) => {
                   onClick={showStatistics}
                 >
                   <span className="fa fa-area-chart game-card-link-text-icon" />
-                  <span className="game-card-link-text game-card-link-text">הצג סטטיסטיקות</span>
+                  <span className="game-card-link-text game-card-link-text">View statistics</span>
                 </a>
               </div>
             </span>
