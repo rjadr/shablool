@@ -11,7 +11,7 @@ const GamesManaged = ({ activeTab, gamesManaged }) =>
           <GameCardManaged game={game} />
         </div>,
         )
-      : <h3>עדיין לא ארגנת משחק לחברים?</h3>}
+      : <h3>Why haven't you organized a quiz yet?</h3>}
   </div>;
 
 GamesManaged.propTypes = {
