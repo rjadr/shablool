@@ -6,7 +6,7 @@ const AnswerSent = () => (
     <div className="game-background" />
     <div className="row">
       <div id="title">
-        <h1>תשובתך נשלחה בהצלחה !</h1>
+        <h1>Your answer has been submitted!</h1>
       </div>
     </div>
     <div className="row">
