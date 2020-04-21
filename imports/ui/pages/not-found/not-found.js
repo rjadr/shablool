@@ -8,9 +8,9 @@ const NotFound = () => (
     </div>
     <div className="row">
       <div className="not-found-title">
-        <h1>אופסססס...</h1>
-        <h3>מתנצלים, נראה שהעמוד הזה פשוט לא קיים!</h3>
-        <a href="/" className="gotohomepage">חזור לדף הבית</a>
+        <h1>Oops...</h1>
+        <h3>Sorry, this page does not exist!</h3>
+        <a href="/" className="gotohomepage">Return to home page</a>
       </div>
     </div>
   </div>
