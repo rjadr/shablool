@@ -22,7 +22,7 @@ export default class GameLobby extends React.Component {
     return (
       <div className="game-lobby">
         <div className="game-background" />
-        <GameNavbar text={`הצטרף למשחק עם הקוד: ${game.code}`} num="" />
+        <GameNavbar text={`Join the game with the code: ${game.code}`} num="" />
         <div className="main-content">
           <div className="row">
             <div className="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -59,7 +59,7 @@ export default class GameLobby extends React.Component {
         </div>
         <audio src="/game_lobby_audio.mp3" autoPlay loop />
         <div id="snackbar" className={this.state.showNoPlayerAlert ? 'show' : ''}>
-          לא ניתן להתחיל משחק בלי שחקנים
+          You can't start a game without players
         </div>
         <audio src="/lobby.mp3" autoPlay loop />
       </div>
