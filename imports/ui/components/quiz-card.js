@@ -54,11 +54,11 @@ const QuizCard = ({ quiz, actions }) => {
               <strong>
                 {quiz.questions.length}{' '}
               </strong>
-              <span>שאלות</span>
+              <span>Questions</span>
             </p>
             <p>
               <span className="quiz-owner-span">
-                {`נוצר ע"י ${Meteor.users.findOne(quiz.owner).username}`}
+                {`made by ${Meteor.users.findOne(quiz.owner).username}`}
               </span>
             </p>
             <p>
@@ -101,13 +101,13 @@ const QuizCard = ({ quiz, actions }) => {
                     onClick={forkQuiz}
                   >
                     <span className="glyphicon glyphicon-duplicate quiz-card-link-text-icon" />
-                    <span className="quiz-card-link-text quiz-card-link-text">העתק שאלון</span>
+                    <span className="quiz-card-link-text quiz-card-link-text">Copy a quiz</span>
                   </a>
                 </div>
                 <div className="col-md-6">
                   <a href={`/ViewQuiz/${quiz._id}`} className="quiz-card-link">
                     <span className="glyphicon glyphicon-info-sign quiz-card-link-text-icon" />
-                    <span className="quiz-card-link-text quiz-card-link-text">צפה בפרטים</span>
+                    <span className="quiz-card-link-text quiz-card-link-text">View details</span>
                   </a>
                 </div>
               </span>}
