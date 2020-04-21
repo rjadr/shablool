@@ -245,7 +245,7 @@ class CreateQuiz extends React.Component {
 
     return (
       <div id="create-quiz">
-        <h1>צור שאלון חדש</h1>
+        <h1>Create a new quiz</h1>
         <QuizForm quiz={this.state.quiz} validate={this.state.validate} actions={actions} />
       </div>
     );
