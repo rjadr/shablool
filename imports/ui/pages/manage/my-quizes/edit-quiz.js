@@ -260,7 +260,7 @@ class EditQuiz extends React.Component {
 
     return (
       <div id="edit-quiz">
-        <h1>ערוך שאלון</h1>
+        <h1>Edit quiz</h1>
         <QuizForm
           quiz={this.state.quiz}
           validate={this.state.validate}
