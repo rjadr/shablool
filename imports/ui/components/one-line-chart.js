@@ -42,10 +42,10 @@ const OneLinesChart = ({ data, dataKeyX, dataKeyY }) => {
       ? <div className="panel panel-body">
         <div className="tooltip-area">
           <p>
-              שאלה #{label}
+              a question #{label}
           </p>
           <p style={{ color: payload[0].color }}>
-              ממוצע: {payload[0].payload.score || payload[0].payload.time.toFixed(3)}
+              average: {payload[0].payload.score || payload[0].payload.time.toFixed(3)}
           </p>
         </div>
       </div>
@@ -65,7 +65,7 @@ const OneLinesChart = ({ data, dataKeyX, dataKeyY }) => {
         <CartesianGrid strokeDasharray="3 3" />
         <Legend verticalAlign="bottom" />
         <Tooltip content={<CustomizedTolltip />} />
-        <Line type="monotone" dataKey={dataKeyY} stroke="#82ca9d" name="ממוצע" />
+        <Line type="monotone" dataKey={dataKeyY} stroke="#82ca9d" name="average" />
       </LineChart>
     </ResponsiveContainer>
   );
