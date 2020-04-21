@@ -11,7 +11,7 @@ const GamesPlayed = ({ activeTab, gamesPlayed }) =>
           <GameCardPlayed game={game} />
         </div>,
         )
-      : <h3>איך עוד לא השתתפת באף משחק ? אתה לא רציני...</h3>}
+      : <h3>Why haven't you participated in any quizzes yet?</h3>}
   </div>;
 
 GamesPlayed.propTypes = {
