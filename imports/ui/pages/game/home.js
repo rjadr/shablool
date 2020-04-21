@@ -53,12 +53,12 @@ class Home extends React.Component {
                     name="gameCode"
                     id="main-input"
                     className="input"
-                    placeholder="הכנס קוד שאלון"
+                    placeholder="Enter quiz code"
                   />
                 </div>
                 <div className="row">
                   <button className="btn btn-primary" type="submit" id="start-game-btn">
-                    התחל משחק!
+                    Start a game!
                   </button>
                 </div>
               </form>
@@ -66,10 +66,10 @@ class Home extends React.Component {
           </div>
         </div>
         <p id="center-home-massage">
-          <a href="/Manage">נהל או צור משחק חדש</a>
+          <a href="/Manage">Manage or create a new game</a>
         </p>
         <div id="snackbar" className={this.state.badGameCode ? 'show' : ''}>
-          לא נמצא משחק
+          No game found
         </div>
       </div>
     );
