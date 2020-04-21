@@ -43,10 +43,10 @@ const TwoLinesChart = ({ data, dataKeyA, dataKeyB, dataKeyX }) => {
               שאלה #{label}
           </p>
           <p style={{ color: payload[0].color }}>
-              אני: {payload[0].payload.playerScore || payload[0].payload.playerTime.toFixed(3)}
+              I am: {payload[0].payload.playerScore || payload[0].payload.playerTime.toFixed(3)}
           </p>
           <p style={{ color: payload[1].color }}>
-              ממוצע: {payload[1].payload.playerScore || payload[1].payload.playerTime.toFixed(3)}
+              average: {payload[1].payload.playerScore || payload[1].payload.playerTime.toFixed(3)}
           </p>
         </div>
       </div>
