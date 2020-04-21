@@ -77,18 +77,18 @@ const QuizCard = ({ quiz, actions }) => {
                     onClick={showDeleteAlert}
                   >
                     <span className="glyphicon glyphicon-remove quiz-card-link-text-icon" />
-                    <span className="quiz-card-link-text">מחק שאלון</span>
+                    <span className="quiz-card-link-text">Delete quiz</span>
                   </a>
                 </div>
                 <div className="col-md-4">
                   <a href={`/EditQuiz/${quiz._id}`} className="star quiz-card-link">
                     <span className="glyphicon glyphicon-pencil quiz-card-link-text-icon" />
-                    <span className="quiz-card-link-text quiz-card-link-text">ערוך שאלון</span>
+                    <span className="quiz-card-link-text quiz-card-link-text">Edit quiz</span>
                   </a>
                 </div>
                 <div className="col-md-4 quiz-card-start-button-area">
                   <button className="btn btn-primary start-game-btn" onClick={initGame}>
-                    <span>התחל משחק! </span>
+                    <span>Start a game! </span>
                     <span className="glyphicon glyphicon-play" />
                   </button>
                 </div>
