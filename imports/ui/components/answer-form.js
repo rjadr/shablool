@@ -39,7 +39,7 @@ const AnswerForm = ({ answer, validate, actions }) => {
             name="text"
             value={answer.text}
             className="form-control col-lg-12"
-            placeholder="הכנס/י תשובה"
+            placeholder="Enter a reply"
             onChange={actions.changeText(answer._id)}
           />
           {textValidation
@@ -52,7 +52,7 @@ const AnswerForm = ({ answer, validate, actions }) => {
       <div className="col-lg-3">
         <div className={`form-group ${pointsValidation ? 'has-error' : ''}`}>
           <label htmlFor="points" className="control-label col-lg-4">
-            ניקוד
+            Score
           </label>
           <input
             value={answer.points}
