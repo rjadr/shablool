@@ -77,7 +77,7 @@ class QuizForm extends React.Component {
                 <input
                   name="title"
                   className="input-title form-control"
-                  placeholder="כותרת שאלון"
+                  placeholder="Quiz title"
                   value={quiz.title}
                   onChange={actions.changeQuizTitle}
                 />
@@ -99,7 +99,7 @@ class QuizForm extends React.Component {
           <div className="flatly classic-padding-bottom">
             <button className="btn btn-lg btn-block" onClick={actions.addQuestion}>
               <span className="glyphicon glyphicon-plus" aria-hidden="true" />
-              <span> הוסף שאלה</span>
+              <span>Add a question </span>
             </button>
           </div>
         </div>
@@ -112,7 +112,7 @@ class QuizForm extends React.Component {
                     <div className="col-md-12">
                       <div className="form-group-lg">
                         <label htmlFor="isPrivate" className="control-label">
-                          מי יכול למצוא את השאלון
+                          Who can find the quiz
                         </label>
                         <select
                           name="isPrivate"
@@ -120,8 +120,8 @@ class QuizForm extends React.Component {
                           onChange={actions.changeQuizPrivacy}
                           value={quiz.private}
                         >
-                          <option value="false">כולם</option>
-                          <option value="true">רק אני</option>
+                          <option value="false">Everyone</option>
+                          <option value="true">Only me</option>
                         </select>
                       </div>
                     </div>
@@ -130,7 +130,7 @@ class QuizForm extends React.Component {
                     <div className="col-md-12">
                       <form onSubmit={actions.addTag}>
                         <label htmlFor="tag" className="control-label">
-                          הוספת תגיות
+                          Adding tags
                         </label>
                         <input name="tag" className="form-control input-lg" />
                       </form>
@@ -171,7 +171,7 @@ class QuizForm extends React.Component {
                           />
                         </div>
                         : <p className="upload-text">
-                            גרור תמונה או תלחץ על מנת לבחור אחת{' '}
+                            Drag an image or click to select one{' '}
                           <i className="fa fa-upload" aria-hidden="true" />
                         </p>}
                     </Dropzone>
