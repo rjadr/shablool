@@ -13,13 +13,13 @@ const Leaders = ({ game }) => {
         ? <div className="row">
           <div className="next-question-button">
             <button className="btn btn-primary" onClick={nextQuestion}>
-              {game.isLastQuestion() ? 'מי ניצח?' : 'שאלה הבאה'}
+              {game.isLastQuestion() ? 'who won?' : 'next question'}
             </button>
           </div>
         </div>
         : ''}
       <div className="row">
-        <GameNavbar text="צמרת הטבלה" num="" />
+        <GameNavbar text="Table top" num="" />
       </div>
       <div className="row">
         <table className="table leaders-table">
