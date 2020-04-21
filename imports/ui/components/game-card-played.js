@@ -27,7 +27,7 @@ const GameCardPlayed = ({ game }) => {
             </h5>
             <p>
               <span className="game-owner-span">
-                {`מריץ המשחק: ${Meteor.users.findOne(game.quiz.owner).username}`}
+                {`Game host: ${Meteor.users.findOne(game.quiz.owner).username}`}
               </span>
             </p>
             <p>
@@ -61,7 +61,7 @@ const GameCardPlayed = ({ game }) => {
                   onClick={showStatistics}
                 >
                   <span className="fa fa-area-chart game-card-link-text-icon" />
-                  <span className="game-card-link-text game-card-link-text">הצג סטטיסטיקות</span>
+                  <span className="game-card-link-text game-card-link-text">View statistics</span>
                 </a>
               </div>
             </span>
