@@ -19,7 +19,7 @@ const Winner = ({ game }) => {
         </div>
       </div>
       <div className="row">
-        <GameNavbar text="הזוכה הגדול" num="" />
+        <GameNavbar text="The big winner" num="" />
       </div>
       <div className="row">
         <div className="winner-name">
@@ -36,7 +36,7 @@ const Winner = ({ game }) => {
       </div>
       <div className="row">
         <div className="winner-score">
-          <p>עם {game.getWinner().userScore} נקודות!</p>
+          <p>עם {game.getWinner().userScore} points!</p>
         </div>
       </div>
     </div>
