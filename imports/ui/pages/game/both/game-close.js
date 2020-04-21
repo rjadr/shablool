@@ -14,12 +14,12 @@ const GameClose = () => {
           className="btn btn-primary show-leaders-btn"
           onClick={backToHome}
         >
-          לדף הבית
+          Home page
         </a>
       </div>
       <div className="row">
         <div id="title">
-          <h1>המשחק הסתיים</h1>
+          <h1>The game is over</h1>
         </div>
       </div>
     </div>
